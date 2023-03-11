@@ -11,7 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-//using Entities;
+using Entities;
+
 namespace Desktop
 {
     /// <summary>
@@ -29,7 +30,8 @@ namespace Desktop
         {
             if (Validator.PassValid(Passwordbox) && Validator.EmailValid(Emailbox) && Validator.RepeatPassValid(Repeatpasswordbox, Passwordbox) && Validator.NameValid(Usernamebpx))
             {
-                //var user = new UserModel
+                var user = new UserModel();
+
                 var wind = new Window1();
                 wind.Show();
                 this.Close();
