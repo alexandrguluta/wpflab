@@ -26,15 +26,15 @@ namespace Desktop
             Manager.window=this;
         }
         //Validator.PassValid(Passwordbox) && Validator.EmailValid(Emailbox) && Validator.RepeatPassValid(Repeatpasswordbox, Passwordbox) && Validator.NameValid(Usernamebpx))
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Button_Register(object sender, RoutedEventArgs e)
         {
             if (Validator.PassValid(Passwordbox) && Validator.EmailValid(Emailbox) && Validator.RepeatPassValid(Repeatpasswordbox, Passwordbox) && Validator.NameValid(Usernamebpx))
             {
-                var user = new UserModel();
-
-                var wind = new Window1();
+                UserRepository.UserAdd(Emailbox.Text, Passwordbox.Text, Usernamebpx.Text);
+                var wind = new LogIn();
                 wind.Show();
                 this.Close();
+
             }
             else if (!Validator.PassValid(Passwordbox))
             {
@@ -54,8 +54,9 @@ namespace Desktop
             }
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void Button_Back(object sender, RoutedEventArgs e)
         {
+           
             var wind = new LogIn();
             wind.Show();
             this.Close();

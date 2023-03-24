@@ -50,12 +50,12 @@
 
             <Border  Margin="5 0 5 10" CornerRadius="12,12,2,2"
     BorderThickness="2" Background="#F96060">
-                <Button Content="Зарегистрироваться" Background="#F96060" Padding="0 10 0 10" Foreground="White" FontSize="18" BorderBrush="#FFF96060" VerticalAlignment="Center" Margin="8,0,10,0" Click="Button_Click" />
+                <Button Content="Зарегистрироваться" Background="#F96060" Padding="0 10 0 10" Foreground="White" FontSize="18" BorderBrush="#FFF96060" VerticalAlignment="Center" Margin="8,0,10,0" Click="Button_Register" />
             </Border>
 
             <Border  Margin="5 0 5 10" CornerRadius="2,2,12,12"
     BorderThickness="2" Background="#F96060">
-                <Button Content="Назад" Background="#F96060" Padding="0 10 0 10" Foreground="White" FontSize="18" BorderBrush="#FFF96060" VerticalAlignment="Center" Margin="8,0,10,0" Click="Button_Click_1" />
+                <Button Content="Назад" Background="#F96060" Padding="0 10 0 10" Foreground="White" FontSize="18" BorderBrush="#FFF96060" VerticalAlignment="Center" Margin="8,0,10,0" Click="Button_Back" />
             </Border>
 
 

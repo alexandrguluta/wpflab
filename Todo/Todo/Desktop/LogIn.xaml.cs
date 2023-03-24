@@ -24,24 +24,29 @@ namespace Desktop
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Button_Login(object sender, RoutedEventArgs e)
         {
-            
+            if (UserRepository.GetUser(Login.Text, Pass.Text) is UserModel)
+            {
+                var wind = new Window1();
+                wind.Show();
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Неправильный логин или пароль");
+            }
         }          
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void Button_Registration(object sender, RoutedEventArgs e)
         {
             var wind = new Registration();
             wind.Show();
             this.Close();
         }
 
-        private void Login_TextChanged(object sender, TextChangedEventArgs e)
-        {
 
-        }
-
-        private void Button_Click_2(object sender, RoutedEventArgs e)
+        private void Button_Forgot_Password(object sender, RoutedEventArgs e)
         {
             var wind = new Registration();
             wind.Show();

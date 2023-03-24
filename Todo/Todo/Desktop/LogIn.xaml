@@ -23,17 +23,17 @@
                    HorizontalAlignment="Center" Margin="0,70,0,0" Height="479" Width="335" Grid.Column="1">
             <Label Content="Добро Пожаловать!" Width="305" Height="48" FontSize="32" Margin="0,0,30,58"/>
             <Label Content="Почта" Height="34" Width="64" FontSize="20" Margin="0,0,270,10" />
-            <TextBox Height="40" Margin="4,0,0,10" Padding="0,0,0,0" FontSize="16" Foreground="#C6C6C6" BorderThickness="0,0,0,1" Name="Login" Text="Введите email" TextChanged="Login_TextChanged"></TextBox>
+            <TextBox Height="40" Margin="4,0,0,10" Padding="0,0,0,0" FontSize="16" Foreground="Black" BorderThickness="0,0,0,1" Name="Login"></TextBox>
             <Label Content="Пароль" Height="34" Width="100" FontSize="20" Margin="0,0,237,10" />
-            <TextBox  Height="40" Margin="4,0,0,10" Padding="0,0,0,0" FontSize="16" Foreground="#C6C6C6" BorderThickness="0,0,0,1" Text="Повторите пароль" Name="Pass"></TextBox>
-            <Button Content="Восстановить пароль" Height="48" Width="327" Margin="0,0,0,10" BorderBrush="White" Background="White" FontSize="16" Click="Button_Click_2" />
+            <TextBox  Height="40" Margin="4,0,0,10" Padding="0,0,0,0" FontSize="16" Foreground="Black" BorderThickness="0,0,0,1" Name="Pass"></TextBox>
+            <Button Content="Восстановить пароль" Height="48" Width="327" Margin="0,0,0,10" BorderBrush="White" Background="White" FontSize="16" Click="Button_Forgot_Password" />
             <Border  Margin="5 0 5 10" CornerRadius="12,12,2,2"
    BorderThickness="2" Background="#F96060">
-                <Button Content="Вход" Background="#F96060" Padding="0 10 0 10" Foreground="White" FontSize="18" Click="Button_Click" BorderBrush="#FFF96060" VerticalAlignment="Center" Margin="8,0,10,0" />
+                <Button Content="Вход" Background="#F96060" Padding="0 10 0 10" Foreground="White" FontSize="18" Click="Button_Login" BorderBrush="#FFF96060" VerticalAlignment="Center" Margin="8,0,10,0" />
             </Border>
             <Border  Margin="5 0 5 10" CornerRadius="2,2,12,12"
    BorderThickness="2" Background="#F96060">
-                <Button Content="Регистрация" Background="#F96060" Padding="0 10 0 10" Foreground="White" FontSize="18" Click="Button_Click_1" BorderBrush="#FFF96060" VerticalAlignment="Center" Margin="8,0,10,0" />
+                <Button Content="Регистрация" Background="#F96060" Padding="0 10 0 10" Foreground="White" FontSize="18" Click="Button_Registration" BorderBrush="#FFF96060" VerticalAlignment="Center" Margin="8,0,10,0" />
             </Border>
         </WrapPanel>
         <WrapPanel Orientation="Vertical"
