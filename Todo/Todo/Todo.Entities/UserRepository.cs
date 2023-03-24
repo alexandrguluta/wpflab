@@ -8,16 +8,19 @@ using Entities;
 
 namespace Entities
 {
-    public class UserRepository
+    public static class UserRepository
     {
-        private List<UserModel> _users = new List<UserModel>()
+        private static List<UserModel> _users = new List<UserModel>();
+
+        public static void UserAdd(string email, string password, string username)
         {
-            new UserModel  {Email = "admin@example.com", Password = "example123"}
-        };
+            UserModel newuser = new UserModel() { Email = email, Password = password, Username = username };
+            _users.Add(newuser);
+        }
+       
 
 
-
-        public  UserModel? GetUser(string email, string pass)
+        public static  UserModel? GetUser(string email, string pass)
         {
             foreach (var user in _users)
             {
@@ -28,11 +31,5 @@ namespace Entities
             }
             return null;
         }
-        public void NewUser(string email, string pass)
-            {
-                new UserModel { Email = email, Password = pass};
-
-            }
-
     }
 };
