@@ -30,11 +30,17 @@ namespace Desktop
         {
             if (Validator.PassValid(Passwordbox) && Validator.EmailValid(Emailbox) && Validator.RepeatPassValid(Repeatpasswordbox, Passwordbox) && Validator.NameValid(Usernamebpx))
             {
-                UserRepository.UserAdd(Emailbox.Text, Passwordbox.Text, Usernamebpx.Text);
-                var wind = new LogIn();
-                wind.Show();
-                this.Close();
 
+                if (UserRepository.UserAdd(Emailbox.Text, Passwordbox.Text, Usernamebpx.Text))
+                {
+                    MessageBox.Show("Пользователь с таким логином уже существует. Попробуйте другой.");
+                }
+                else
+                {
+                    var wind = new LogIn();
+                    wind.Show();
+                    this.Close();
+                }
             }
             else if (!Validator.PassValid(Passwordbox))
             {
