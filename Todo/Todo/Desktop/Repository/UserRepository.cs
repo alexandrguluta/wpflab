@@ -11,6 +11,7 @@ namespace Entities
     public static class UserRepository
     {
         private static List<UserModel> _users = new List<UserModel>();
+        public static UserModel CurrentUser { get; set; }
 
         public static bool UserAdd(string email, string password, string username)
         {

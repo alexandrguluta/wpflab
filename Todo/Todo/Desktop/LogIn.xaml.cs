@@ -31,6 +31,7 @@ namespace Desktop
                 var wind = new Window1();
                 wind.Show();
                 this.Close();
+                UserRepository.CurrentUser = UserRepository.GetUser(Login.Text, Pass.Text);
             }
             else
             {
