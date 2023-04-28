@@ -26,7 +26,7 @@ namespace Desktop
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            var wind = new Main();
+            var wind = new AddTaskWindow();
             wind.Show();
             this.Close();
         }

@@ -47,7 +47,7 @@ namespace Desktop
                 new TaskCategories { CategoryName = "Отдых", Color = colors[3] }
             };
             MenuList.ItemsSource = taskCategories;
-
+            /*
             var taskDateTime = DateTime.Now;
             tasks = new ObservableCollection<TaskModel>
             {
@@ -58,7 +58,7 @@ namespace Desktop
                 new TaskModel {Title = "Заголовок", Description = "Meet according with design team", TaskDateTime = taskDateTime, DisplayTime = taskDateTime.ToString(), IsCompleted = false, Color = Brushes.White},
                 new TaskModel {Title = "Заголовок", Description = "Meet according with design team", TaskDateTime = taskDateTime, DisplayTime = taskDateTime.ToString(), IsCompleted = false, Color = Brushes.White},
             };
-            TasksList.ItemsSource = tasks;
+            TasksList.ItemsSource = tasks; */
         }
 
         private void AddTaskButton_Click(object sender, RoutedEventArgs e)
